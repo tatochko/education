@@ -1,0 +1,31 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+.header{
+    background-color: #6a08ff;
+    &__inner{
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 15px;
+        .top{
+            padding-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .nav{
+                display: flex;
+                li{
+                    a{
+                        padding: 0 28px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@import "media";
