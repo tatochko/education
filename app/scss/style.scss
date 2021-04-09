@@ -19,13 +19,114 @@
                 li{
                     a{
                         padding: 0 28px;
+                        &:hover{
+                            color: #ff5f60;
+                        }
                     }
+                }
+            }
+            .btn:hover{
+                color: #ff5f60;
+                background-color: #fff;
+            }
+        }
+        .content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 150px 0;
+            .left{
+                color: #fff;
+                max-width: 570px;
+                h1{
+                    font-size: 3em;
+                }
+                p{
+                    padding: 20px 0;
+                }
+                .btn{
+                    font-weight: 700;
                 }
             }
         }
     }
 }
 
+.main{
+    &__inner{
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 15px;
+        .item{
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            padding: 70px 0;
+            &:nth-child(2n){
+                flex-direction: row-reverse;
+            }
+            &-right{
+                max-width: 570px;
+                h2{
+                    font-weight: 100;
+                }
+                p{
+                    font-size: 17px;
+                    color: #8c8c8c;
+                }
+            }
+        }
+    }
+}
 
+.middle{
+    padding-bottom: 80px;
+    &__inner{
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        .item{
+            max-width: 400px;
+            text-align: center;
+            padding: 0 30px;
+            p{
+                font-size: 17px;
+                color: #8c8c8c;
+            }
+        }
+    }
+}
+
+.footer{
+    &__inner{
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 40px 15px;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        .left{
+            display: flex;
+            justify-content: space-between;
+            color: #c9c9c9;
+            li{
+                padding: 0 10px;
+            }
+        }
+        .right{
+            display: flex;
+            justify-content: space-between;
+            li{
+                padding: 0 10px;
+                a:hover{
+                    color: #000;
+                }
+            }
+        }
+    }
+}
 
 @import "media";
