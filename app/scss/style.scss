@@ -25,10 +25,6 @@
                     }
                 }
             }
-            .btn:hover{
-                color: #ff5f60;
-                background-color: #fff;
-            }
         }
         .content{
             display: flex;
@@ -74,6 +70,10 @@
                 p{
                     font-size: 17px;
                     color: #8c8c8c;
+                }
+                .btn:hover{
+                    background-color: #6a08ff;
+                    color: #5fffff;
                 }
             }
         }
@@ -122,11 +122,77 @@
             li{
                 padding: 0 10px;
                 a:hover{
-                    color: #000;
+                    color: #ff5f60;
                 }
             }
         }
     }
 }
+
+#modal input {
+    display: block;
+    width: 200px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    border-style: none;
+    border-radius: 10em 0 0 10em;
+    outline: none;
+    height: 40px;
+    padding: 0px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+#modal {
+    width: 370px;
+    background-color: #ff5f60;
+    border-top: 8px solid #183251;
+    border-radius: 8px;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    top: 79%;
+    left: 170px;
+    h3{
+        color: #fff;
+    }
+    p{
+        color: #ffafb0;
+        font-size: 14px;
+    }
+}
+.modal__btn {
+    text-align: center;
+}
+.modal__btn-btn {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 0 10em 10em 0;
+    border-style: none;
+    padding: 20px 20px 20px 30px;
+    background-color: #1f3148;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    &::before{
+        content: " ";
+        position: absolute;
+        background-image: url(../img/send-icon.png);
+        width: 20px;
+        height: 20px;
+        left: 12px;
+        top: 8px;
+    }
+}
+.form{
+    display: flex;
+}
+
 
 @import "media";

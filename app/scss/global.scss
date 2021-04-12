@@ -32,4 +32,9 @@ li{
   background-color: #ff5f60;
   cursor: pointer;
   border-style: none;
+  transition: color .8s ease-out;
+  &:hover{
+    color: #ff5f60;
+    background-color: #fff;
+  }
 }
