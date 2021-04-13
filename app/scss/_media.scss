@@ -1,0 +1,30 @@
+@media (max-width: 780px){
+    .header{
+        &__inner{
+            .top{
+                .nav{
+                    .header__btn{
+                        display: block;
+                    }
+                    ul{
+                        display: none;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        margin-top: 20px;
+                        z-index: 50;
+                        background-color: #212121;
+                        height: 100vh;
+                        li {
+                            border-top: 1px solid #c7b299;
+                            border-bottom: 1px solid #c7b299;
+                            padding-bottom: 20px;
+                            padding-top: 20px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -16,20 +16,27 @@
         <div class="logo">
           <img src="../img/logo.png" alt="logo">
         </div>
-        <ul class="nav">
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">Services</a>
-          </li>
-          <li>
-            <a href="#">Product</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
+        <nav class="nav">
+          <div class="header__btn">
+            <span class="header__btn-global header__btn-top"></span>
+            <span class="header__btn-global header__btn-middle"></span>
+            <span class="header__btn-global header__btn-bottom"></span>
+          </div>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Product</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
         <button class="btn">Sing in</button>
       </div>
       <div class="content">
@@ -119,6 +126,11 @@
   </footer>
 
   <div id="modal">
+    <button id="close" class="close">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
+        <path d="M13 12l5-5-1-1-5 5-5-5-1 1 5 5-5 5 1 1 5-5 5 5 1-1z"></path>
+      </svg>
+    </button>
     <h3>Apply for admission</h3>
     <p>Make it more simple!</p>
     <form class="form">
