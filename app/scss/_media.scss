@@ -1,10 +1,54 @@
+@media (max-width: 940px){
+    .header{
+        &__inner{
+            .content{
+                flex-direction: column-reverse;
+            }
+        }
+    }
+    .main{
+        &__inner{
+            .item{
+                flex-direction: column-reverse;
+                &:nth-child(2n){
+                    flex-direction: column-reverse;
+                }
+                &-right{
+                    padding-bottom: 20px;
+                    max-width: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 805px){
+    .footer{
+        &__inner{
+            font-size: 12px;
+            .left{
+                li{
+                    padding: 0 5px;
+                }
+            }
+            .right{
+                li{
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 780px){
     .header{
         &__inner{
             .top{
                 .nav{
+                    order: 3;
                     .header__btn{
                         display: block;
+                        margin-left: 0;
                     }
                     ul{
                         display: none;
@@ -13,7 +57,7 @@
                         right: 0;
                         margin-top: 20px;
                         z-index: 50;
-                        background-color: #212121;
+                        background-color: #6a08ff;
                         height: 100vh;
                         li {
                             border-top: 1px solid #c7b299;
@@ -26,5 +70,62 @@
                 }
             }
         }
+    }
+}
+
+@media (max-width: 640px){
+    .footer{
+        &__inner{
+            font-size: 12px;
+            .right{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .middle{
+        &__inner{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 540px){
+    .header{
+        &__inner{
+            .content{
+                .left{
+                    h1{
+                        font-size: 2em;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .main{
+        &__inner{
+            .item{
+                &-right{
+                    h2{
+                        font-size: 1.2em;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 430px){
+    #modal{
+        display: none;
     }
 }
